@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.info {
+    position: relative;
+  }
+  .image {
+    display: block;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 12px;
+    right: 0;
+    height: 230px;
+    width: 230px;
+    opacity: 0;
+    border-radius: 10px;
+    transition: 0.5s ease-in;
+  }
+  
+  .info:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
